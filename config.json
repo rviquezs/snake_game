@@ -1,0 +1,9 @@
+{
+    "SCORE_COLOR": "green",
+    "SCORE_ALIGNMENT": "center",
+    "SCORE_FONT": "Arial",
+    "SCORE_FONT_SIZE": 24,
+    "SCORE_FONT_TYPE": "normal",
+    "SNAKE_SPEED": 20,
+    "SNAKE_COLOR": "white"
+}
