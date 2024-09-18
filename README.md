@@ -47,4 +47,9 @@ Make sure you are in the directory where `main.py` is located. (snake_game by de
 - Avoid colliding with the walls or the snake's own body.
 - The game ends when the snake collides with itself or the boundaries.
 
+## License
+
+This project is licensed under the Unlicense License. See the [UNLICENSE](UNLICENSE) file.
+
+
 ---
