@@ -6,8 +6,6 @@ A simple implementation of the classic Snake Game using the Turtle module from P
 
 - Simple gameplay
 - Basic scoring system
-- Customizable game speed
-- Responsive controls
 
 ## Installation
 
