@@ -1,3 +1,4 @@
+import time
 from tkinter.constants import RIGHT
 from turtle import Turtle
 
@@ -41,16 +42,21 @@ class Snake:
 
     def up(self):
         if self.head.heading() != DOWN:
-            self.head.setheading(UP)
 
+            self.head.setheading(UP)
+            time.sleep(0.01)
     def down(self):
         if self.head.heading() != UP:
-            self.head.setheading(DOWN)
 
+            self.head.setheading(DOWN)
+            time.sleep(0.01)
     def left(self):
         if self.head.heading() != RIGHT:
-            self.head.setheading(LEFT)
 
+            self.head.setheading(LEFT)
+            time.sleep(0.01)
     def right(self):
         if self.head.heading() != LEFT:
+
             self.head.setheading(RIGHT)
+            time.sleep(0.01)
