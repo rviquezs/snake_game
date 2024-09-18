@@ -37,7 +37,7 @@ class Snake:
             x_axis = self.segments[seg - 1].xcor()
             y_axis = self.segments[seg - 1].ycor()
             self.segments[seg].goto(x_axis, y_axis)
-        self.head.forward(STEPS)
+        self.head.forward(SPEED)
 
     def up(self):
         if self.head.heading() != DOWN:
