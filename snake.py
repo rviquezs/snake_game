@@ -1,13 +1,15 @@
 import time
 from tkinter.constants import RIGHT
 from turtle import Turtle
+import json
 
-from dns.update import UPDATE
-from selenium.webdriver.common.devtools.v85.page import DownloadProgress
+# Load configuration
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
 
 STARTING_POSITIONS=[(0,0),(-20,0),(-40,0)]
-SPEED = 20
-COLOR = 'white'
+SPEED = config["SNAKE_SPEED"]
+COLOR = config["SNAKE_COLOR"]
 UP = 90
 DOWN = 270
 LEFT = 180
