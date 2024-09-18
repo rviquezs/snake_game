@@ -7,7 +7,7 @@ food = Food()
 score = Score()
 
 screen = Screen()
-screen.setup(height=600, width=500)
+screen.setup(height=600, width=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
 screen.tracer(0)
