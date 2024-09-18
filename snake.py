@@ -5,8 +5,8 @@ from dns.update import UPDATE
 from selenium.webdriver.common.devtools.v85.page import DownloadProgress
 
 STARTING_POSITIONS=[(0,0),(-20,0),(-40,0)]
-STEPS = 20
-SNAKE_COLOR = 'white'
+SPEED = 20
+COLOR = 'white'
 UP = 90
 DOWN = 270
 LEFT = 180
