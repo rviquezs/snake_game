@@ -1,10 +1,15 @@
 from turtle import Turtle
+import json
 
-ALIGNMENT = 'center'
-COLOR = 'white'
-FONT = 'Courier'
-FONT_SIZE = 15
-FONT_TYPE = 'bold'
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
+
+COLOR = config["SCORE_COLOR"]
+ALIGNMENT = config["SCORE_ALIGNMENT"]
+FONT = config["SCORE_FONT"]
+FONT_SIZE = config["SCORE_FONT_SIZE"]
+FONT_TYPE = config["SCORE_FONT_TYPE"]
+
 
 class Score(Turtle):
     def __init__(self):
