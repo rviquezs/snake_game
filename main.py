@@ -1,6 +1,8 @@
 import time
 from turtle import Screen
 from snake import Snake
+from food import Food
+from score import Score
 
 snake = Snake()
 food = Food()
@@ -34,6 +36,7 @@ while game_is_on:
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
         game_is_on = False
         score.game_over()
+
     # Detect collision with tail
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
