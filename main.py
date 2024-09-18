@@ -22,4 +22,9 @@ while game_is_on:
     time.sleep(.1)
     snake.move()
 
+    # Detect collision food
+    if snake.head.distance(food) < 15:
+        food.new_location()
+        snake.extend()
+        score.increase_score()
 screen.exitonclick()
