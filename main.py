@@ -10,9 +10,8 @@ def main():
     score = Score()
 
     screen = Screen()
-    screen.setup(height=600, width=600)
+    screen.setup(height=700, width=600)
     screen.bgcolor("black")
-    screen.screensize(600,600)
     screen.title("Snake Game")
     screen.tracer(0)
     screen.listen()
@@ -35,7 +34,7 @@ def main():
             score.increase_score()
 
         # Detect collision walls
-        if snake.head.xcor() > 295 or snake.head.xcor() < -295 or snake.head.ycor() > 295 or snake.head.ycor() < -295:
+        if snake.head.xcor() > 295 or snake.head.xcor() < -295 or snake.head.ycor() > 340 or snake.head.ycor() < -340:
             score.reset()
             snake.reset()
 
