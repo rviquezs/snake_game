@@ -3,7 +3,7 @@
 A simple implementation of the classic Snake Game using the Turtle module from Python. The game features a snake that grows as it eats food, and the player must avoid colliding with the walls or the snake itself. Inspired by the classic arcade game.
 
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/4ab30a94-2f6e-4e8e-bde4-2b01dcf33582" alt="snake_game" width="600"/>
+  <img src="https://res.cloudinary.com/dqyllgamr/image/upload/v1726710789/snake4_flrjwi" alt="snake_game" width="600"/>
 </div>
 
 ## Features
@@ -13,43 +13,51 @@ A simple implementation of the classic Snake Game using the Turtle module from P
 
 ## Installation
 
-1. Clone the repository:
+1. **Download the Project Files**
+   - Download the ZIP file of the project from [this link](https://github.com/rvqzs/snake_game/archive/refs/heads/master.zip).
 
-   ```bash
-   git clone https://github.com/rvqzs/snake_game.git
-   ```
+2. **Extract the ZIP File**
+   - After downloading, extract the ZIP file to a directory of your choice. This will create a folder named `snake_game-master` containing the project files.
 
-2. Navigate to the project directory:
+3. **Check Python Installation**
+   - To check if Python is installed on your system, open a terminal or command prompt and run:
+     ```bash
+     python --version
+     ```
+   - If Python is not installed, download and install Python from [python.org](https://www.python.org/downloads/). Ensure you download Python version 3.11.8 or above.
 
-   ```bash
-   cd snake-game
-   ```
-
-3. Ensure you have Python installed. You can download it from [python.org](https://www.python.org/downloads/).
-
-4. Install the Turtle module if it's not included with your Python installation (it's included by default with most Python distributions).
+4. **Install Turtle Module**
+   - The Turtle module is included with most Python distributions. If it's not installed, you can install it via pip:
+     ```bash
+     pip install PythonTurtle
+     ```
 
 ## Usage
 
-To start the game, run the following command in your terminal:
+1. **Open Terminal or PowerShell**
+   - On Windows, you can open Command Prompt or PowerShell by pressing `Win + R`, typing `cmd` or `powershell`, and pressing `Enter`.
 
-```bash
-python main.py
-```
-If you get an error you may also try:
+2. **Navigate to the Project Directory**
+   - Use the `cd` command to change to the directory where you extracted the ZIP file. For example, if you extracted the files to `C:\Users\username\Downloads\snake_game-master`, you would run:
+     ```bash
+     cd C:\Users\username\Downloads\snake_game-master
+     ```
 
-```bash
-py main.py
-```
+3. **Run the Game**
+   - Start the game by running the following command:
+     ```bash
+     python main.py
+     ```
+   - If you encounter issues, try:
+     ```bash
+     py main.py
+     ```
 
-Make sure you are in the directory where `main.py` is located. (snake_game by default)
-
-## Gameplay
-
-- Use the arrow keys to control the direction of the snake.
-- Eat the food (represented by a circle) to grow the snake and increase your score.
-- Avoid colliding with the walls or the snake's own body.
-- The game ends when the snake collides with itself or the boundaries.
+4. **Start Playing**
+   - Use the arrow keys to control the direction of the snake.
+   - Eat the food (represented by a circle) to grow the snake and increase your score.
+   - Avoid colliding with the walls or the snake's own body.
+   - The game ends when the snake collides with itself or the boundaries.
 
 ## License
 
