@@ -11,6 +11,7 @@ def main():
 
     screen = Screen()
     screen.setup(height=700, width=600)
+    screen.cv._rootwindow.resizable(False, False)
     screen.bgcolor("black")
     screen.title("Snake Game")
     screen.tracer(0)
