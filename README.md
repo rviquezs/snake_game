@@ -2,6 +2,10 @@
 
 A simple implementation of the classic Snake Game using the Turtle module from Python. The game features a snake that grows as it eats food, and the player must avoid colliding with the walls or the snake itself. Inspired by the classic arcade game.
 
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/4ab30a94-2f6e-4e8e-bde4-2b01dcf33582" alt="snake_game" width="600"/>
+</div>
+
 ## Features
 
 - Simple gameplay
