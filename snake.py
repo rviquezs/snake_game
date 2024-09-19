@@ -1,5 +1,4 @@
 import time
-from tkinter.constants import RIGHT
 from turtle import Turtle
 import json
 
