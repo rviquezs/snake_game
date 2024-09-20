@@ -1,7 +1,23 @@
 from turtle import Turtle
 import json
+import sys
+import os
 
-with open('config.json', 'r') as config_file:
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for both dev and PyInstaller bundles. """
+    if hasattr(sys, '_MEIPASS'):
+        # If running from a PyInstaller bundle
+        base_path = sys._MEIPASS
+    else:
+        # If running in normal Python environment
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+config_file_path = resource_path('config.json')
+data_file_path = resource_path('assets/data.txt')
+
+with open(config_file_path, 'r') as config_file:
     config = json.load(config_file)
 
 COLOR = config["SCORE_COLOR"]
@@ -23,12 +39,12 @@ class Score(Turtle):
         self.hideturtle()
 
     def get_highest_score(self):
-        with open('data.txt', mode='r') as data:
+        with open(data_file_path, mode='r') as data:
             self.highest_score = data.read()
         return self.highest_score
 
     def set_highest_score(self, score):
-        with open('data.txt', mode='w') as data:
+        with open(data_file_path, mode='w') as data:
             data.write(str(score))
         self.highest_score = score
 
