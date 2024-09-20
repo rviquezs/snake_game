@@ -1,9 +1,24 @@
 import time
 from turtle import Turtle
 import json
+import sys
+import os
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for both dev and PyInstaller bundles. """
+    if hasattr(sys, '_MEIPASS'):
+        # If running from a PyInstaller bundle
+        base_path = sys._MEIPASS
+    else:
+        # If running in normal Python environment
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+config_file_path = resource_path('config.json')
 
 # Load configuration
-with open('config.json', 'r') as config_file:
+with open(config_file_path, 'r') as config_file:
     config = json.load(config_file)
 
 STARTING_POSITIONS=[(0,0),(-20,0),(-40,0)]
