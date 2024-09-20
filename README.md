@@ -14,7 +14,7 @@ A simple implementation of the classic Snake Game using the Turtle module from P
 
 1. **Download the Setup File**
    - Go to the [Releases](https://github.com/rvqzs/snake_game/releases) and download `SnakeGame_setup.exe`.
-   - Or just click [here](https://github.com/rvqzs/snake_game/releases/download/v1.0.0/SnakeGame_setup.exe) to download it.
+   - Or just click [here](https://github.com/rvqzs/snake_game/releases/download/v0.1.0/SnakeGame_setup.exe) to download it.
   
 2. **Install the Game**
    - Once downloaded, run the `SnakeGame_setup.exe` and follow the on-screen instructions to install the game.
