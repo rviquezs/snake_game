@@ -1,5 +1,6 @@
 .idea
 data.txt
+.exe
 
 __pycache__/
 *.py[cod]
